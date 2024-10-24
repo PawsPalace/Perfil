@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+<head>
+
+    <link rel="stylesheet" href="perfil.css">
+    <title> Perfil Paws Palace </title>
+
+</head>
+
+<body>
+    <script src="perfil.js"></script>
+
+    <header>
+        <div class="logo" id="logo">
+            <img src="img/Logo.png" width="80px" height="80px">
+        </div>
+
+        <button class="btnperfil" id="btnvoltaperfil" onclick="btnvoltaperfil()"> <img src="img/perfil.png" alt="perfil"
+                class="perfil"> </button>
+    </header>
+
+
+    <div class="content">
+        <div class="coluna">
+            <button id="btnfunc" class="btns" onclick="botoes()"> Funcionários </button>
+            <button id="btncli" class="btns" onclick="botoes()"> Clientes </button>
+            <button id="btnpets" class="btns" onclick="botoes()"> Pets </button>
+
+            <p class="sac">SAC</p>
+        </div>
+
+        <!-- Primeiro form -->
+        <div class="contentbox">
+            <div class="formfunc">
+
+                <div class="labelbox">
+                    <div class="label">Dados Pessoais </div>
+                    <div class="labellinha"> </div>
+                </div>
+
+
+                <div class="formbox">
+                    <div class="inputbox">
+                        <label for="nomefunc"> Nome Completo </label>
+                        <input type="text" id="nomefunc" class="input">
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="sexofunc"> Sexo </label>
+                        <select id="sexofunc" class="input">
+                            <option value="" disabled selected> </option>
+                            <option value="masc"> Masculino </option>
+                            <option value="fem"> Feminino </option>
+                        </select>
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="cargofunc"> Cargo </label>
+                        <input type="text" id="cargofunc" class="input">
+                    </div>
+                </div>
+
+
+
+                <div class="formbox">
+                    <div class="inputbox">
+                        <label for="cpffunc"> CPF </label>
+                        <input type="text" id="cpffunc" class="input">
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="ecfunc"> Estado Civil </label>
+                        <select id="ecfunc" class="input">
+                            <option value="" disabled selected></option>
+                            <option value="solteiro"> Solteiro </option>
+                            <option value="Casado"> Casado </option>
+                            <option value="separado"> Separado </option>
+                            <option value="divorciado"> Divorciado </option>
+                            <option value="viuvo"> Viúvo </option>
+                        </select>
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="nascfunc"> Data de Nascimento</label>
+                        <input type="date" id="nascfunc" class="input">
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="codfunc"> Cod. Registro </label>
+                        <input type="number" id="codfunc" class="input">
+                    </div>
+
+                </div>
+
+                <div class="formbox">
+                    <div class="inputbox">
+                        <label for="emailfunc"> Email </label>
+                        <input type="email" id="emailfunc" class="input">
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="natfunc"> Naturalidade </label>
+                        <input type="text" id="natfunc" class="input">
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="telfunc"> Telefone </label>
+                        <input type="text" id="telfunc" class="input">
+                    </div>
+                </div>
+
+
+
+                <div class="labelbox">
+                    <div class="label"> Endereço</div>
+                    <div class="labellinha"> </div>
+                </div>
+
+                <div class="formbox">
+                    <div class="inputbox">
+                        <label for="cepfunc"> CEP </label>
+                        <input type="text" id="cepfunc" class="input">
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="logfunc"> Logradouro </label>
+                        <input type="text" id="logfunc" class="input">
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="compfunc"> Complemento </label>
+                        <input type="text" id="compfunc" class="input">
+                    </div>
+                </div>
+
+                <div class="formbox">
+                    <div class="inputbox">
+                        <label for="bairrofunc"> Bairro </label>
+                        <input type="text" id="bairrofunc" class="input">
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="numfunc"> Nº </label>
+                        <input type="number" id="numfunc" class="input">
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="estfunc"> Estado </label>
+                        <input type="text" id="estfunc" class="input">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Segundo form -->
+            <div class="formcli">
+                Teste
+            </div>
+
+            <!-- Terceiro form -->
+            <div class="formpet">
+                <div class="box1">
+                    <div class="petbox">
+
+                        <div class="imgpetbox">
+
+                            <img src="img/1.png" class="imgpet" alt="imgpet" height="100px" width="100px">
+
+                            <div class="inputbox">
+                                <label for="nomepet"> Nome do Pet </label>
+                                <input type="text" id="nomepet" class="input">
+                            </div>
+
+                        </div>
+
+                        <button id="altimgpet" class="btnimgpet"> Alterar Imagem </button>
+
+                    </div>
+
+
+
+                    <div class="formbox2">
+
+
+                        <div class="inputbox">
+                            <label for="racapet"> Raça </label>
+                            <input type="text" id="racapet" class="input">
+                        </div>
+
+                        <div class="inputbox">
+                            <label for="idadepet"> Idade </label>
+                            <input type="text" id="idadepet" class="input">
+                        </div>
+
+
+
+                        <div class="inputbox">
+                            <label for="persopet"> Personalidade </label>
+                            <input type="text" id="persopet" class="input">
+                        </div>
+
+                        <div class="inputbox">
+                            <label for="obspet"> Observações </label>
+                            <textarea id="obspet" class="input"></textarea>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="box2">
+                    <div class="inputbox">
+                        <label for="nomeresp"> Nome do responsável </label>
+                        <input type="text" id="nomeresp" class="input">
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="cpfresp"> CPF </label>
+                        <input type="text" id="cpfresp" class="input">
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="endresp"> Endereço </label>
+                        <input type="text" id="endresp" class="input">
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="estilotosa"> Estilo da tosa: </label>
+                        <select id="estilotosa" class="input">
+                            <option value="" disabled selected></option>
+                            <option value="tosaraca"> Tosa de raça </option>
+                            <option value="tosahigienica"> Tosa higiênica </option>
+                            <option value="tosatesoura"> Tosa na tesoura </option>
+                            <option value="tosamaquina"> Tosa na máquina </option>
+                            <option value="tosabebe"> Tosa bebê </option>
+                            <option value="tosaverao"> Tosa verão </option>
+                            <option value="semtosa"> Sem tosa </option>
+                        </select>
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="acessorios"> Acessórios </label>
+                        <select id="acessorios" class="input">
+                            <option value="" disabled selected></option>
+                            <option value="sim"> Sim </option>
+                            <option value="nao"> Não </option>
+                        </select>
+                    </div>
+
+
+                </div>
+
+                <div class="box3">
+                    <div class="inputbox">
+                        <label for="formapag"> Forma de pagamento </label>
+                        <select id="formapag" class="input">
+                            <option value="" disabled selected></option>
+                            <option value="pagpix"> Pix </option>
+                            <option value="pagcartao"> Cartão </option>
+                        </select>
+                    </div>
+
+                    <div class="boxdata">
+                        <label for="boxdata" id="labeldata"> Data de Atendimento </label>
+                    </div>
+
+                    <div class="boxinputdata">
+
+                        <div class="inputbox">
+                            <input type="date" id="dataatend" class="input">
+                        </div>
+
+                        <div class="inputbox">
+                            <input type="time" id="horaatend" class="input">
+                        </div>
+
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="obsatend"> Observações </label>
+                        <textarea id="obsatend" class="input"></textarea>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
