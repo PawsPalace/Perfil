@@ -1,0 +1,417 @@
+/*pagina geral*/
+* {
+    padding: 0%;
+    margin: 0%;
+
+    font-family: "Roboto", sans-serif;
+    overflow-wrap: break-word;
+    transition: all 100ms;
+}
+
+header {
+    background-color: #5E3811;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100px;
+}
+
+.logo {
+    scale: 1.55;
+    margin-left: 5vw;
+
+}
+
+.btnperfil {
+    background: none;
+    border: none;
+    margin-right: 5vw;
+}
+
+.perfil {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+}
+
+.coluna {
+    display: flex;
+    background-color: #75502a;
+    width: 200px;
+    height: 850px;
+    color: white;
+
+    flex-direction: column;
+    text-align: center;
+}
+
+.btns {
+    background: none;
+    color: white;
+    border: none;
+
+    height: 80px;
+    font-size: x-large;
+
+    cursor: pointer;
+    transition: all 100ms;
+}
+
+#btnfunc:hover,
+#btncli:hover,
+#btnpets:hover {
+    background-color: #976d44;
+    transition: all 100ms;
+}
+
+.sac {
+    position: relative;
+    margin: auto 0px 0px auto;
+
+}
+
+.contentbox {
+    display: flex;
+    background-color: #F7BB49;
+    width: 100%;
+    height: auto;
+}
+
+
+/*primeiro form*/
+.formfunc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+}
+
+.formcolunas {}
+
+.labelbox {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: clamp(400px, 90vw, auto);
+    height: 50px;
+
+    margin: 40px 0px 10px 30px;
+}
+
+.label {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: clamp(150px, 10vw, 200px);
+    height: 50px;
+    padding: 5px 5px 5px 5px;
+
+    background-color: #5E3811;
+    color: white;
+
+    font-size: larger;
+
+}
+
+.labellinha {
+    width: 100%;
+    height: 10px;
+    background-color: #5E3811;
+
+}
+
+.formbox {
+    display: flex;
+    justify-content: left;
+    width: 90%;
+
+    margin: 30px 0px 0px 30px;
+}
+
+.inputbox {
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+
+    margin: 0px 10px 0px 10px;
+
+}
+
+.input {
+    height: 35px;
+
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+
+    font-size: large;
+}
+
+#nomefunc {
+    width: clamp(220px, 30vw, 1000px);
+}
+
+#cargofunc,
+#cpffunc,
+#emailfunc, #sexofunc {
+    width: clamp(220px, 20vw, 1000px);
+}
+
+#ecfunc {
+    width: clamp(120px, 10vw, 1000px);
+
+}
+
+#nascfunc,
+#codfunc {
+    width: clamp(110px, 12vw, 1000px);
+}
+
+#natfunc,
+#telfunc {
+    width: clamp(110px, 18vw, 1000px);
+}
+
+#cepfunc,
+#bairrofunc,
+#numfunc,
+#compfunc,
+#estfunc,
+#logfunc {
+    width: clamp(220px, 20vw, 1000px);
+}
+
+
+/*segundo form*/
+.formcli {
+    display: none;
+    background-color: aquamarine;
+}
+
+/*terceiro form*/
+.formpet {
+    display: none;
+    width: 100%;
+}
+
+.formpet .inputbox {
+    text-size-adjust: auto;
+}
+
+.box1 {
+    width: clamp(300px, 25vw, 2000px);
+    border-right: 5px solid #5E3811;
+}
+
+.petbox {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.imgpetbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgpet {
+    display: flex;
+    width: clamp(80px, 7vw, 150px);
+    height: clamp(80px, 7vw, 150px);
+    border: 1px solid black;
+    border-radius: 50%;
+
+    margin: 10px 10px 10px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgpet img {
+    width: 100%;
+    height: 100%;
+}
+
+.btnimgpet {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #5E3811;
+
+    height: 30px;
+    width: 150px;
+
+    margin: 20px 0px 20px 15px;
+    font-size: large;
+}
+
+.formbox2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#racapet,
+#idadepet,
+#persopet,
+#obspet {
+    width: clamp(175px, 17vw, 2000px);
+    margin-bottom: 30px;
+}
+
+#nomepet {
+    width: clamp(150px, 12vw, 1000px);
+}
+
+#obspet {
+    height: 175px;
+    padding-top: 5px;
+    resize: none;
+
+}
+
+.box2 {
+    width: clamp(300px, 25vw, 2000px);
+    padding: 10px 0px 0px 30px;
+    margin-right: 5vw;
+}
+
+#nomeresp,
+#cpfresp,
+#endresp,
+#estilotosa,
+#acessorios {
+    width: clamp(175px, 25vw, 2000px);
+    margin-bottom: 30px;
+}
+
+.box3 {
+    width: auto;
+    padding: 10px 0px 0px 30px;
+}
+
+#formapag {
+    width: clamp(250px, 24vw, 1000px);
+    margin-bottom: 30px;
+}
+
+.boxdata {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+#labeldata {
+    background-color: #5E3811;
+    color: white;
+
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+
+    text-align: center;
+    align-content: center;
+    font-size: larger;
+}
+
+.boxinputdata {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+#dataatend,
+#horaatend {
+    width: clamp(100px, 10vw, 1000px);
+}
+
+#horaatend {
+    text-align: center;
+}
+
+#obsatend {
+    width: auto;
+    height: 175px;
+    padding-top: 5px;
+    resize: none;
+
+}
+
+
+
+
+/*responsividade*/
+@media (max-width: 1230px) {
+    .formbox {
+        display: inline;
+        margin: 10px 0px 10px 30px;
+    }
+
+    .formfunc {}
+
+    .contentbox {
+        height: 1500px;
+    }
+
+    .coluna {
+        flex-direction: row;
+        width: 100%;
+        height: 80px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .btns {
+        padding: 0px 15px 0px 15px;
+    }
+
+    .sac {}
+
+    .formpet {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .box1 {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+
+        border-bottom: 5px solid #5E3811;
+        border-right: none;
+    }
+
+    .btnimgpet {
+
+    }
+
+    .formbox2{
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        margin: 30px 0px 0px 30px;
+    }
+
+    .imgpetbox{
+        padding-left: 25px;
+        margin-right: clamp(100px, 5vw, 1000px);
+    }
+}
+
